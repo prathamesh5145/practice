@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: prathamesh
+  labals:
+    app: frontend
+spec:
+  template:
+    containers:
+      - name: app
+        image: httpd
+        ports: 
+        - containerPort: 80
+          
+replicas: 3
+selector:
+  matchLabels:
+    app: frontend
+---
