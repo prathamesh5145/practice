@@ -6,10 +6,9 @@ metadata:
   labels:
     app: frontend
 spec:
-  template:
-    containers:
-      - name: app
-        image: httpd
-        ports: 
-        - containerPort: 80
+  containers:
+    - name: app
+      image: httpd
+      ports: 
+      - containerPort: 80
 ---
