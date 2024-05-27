@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-Kind: RelicationControler
+Kind: RelicationController
 metadata:
   name: tushar
   labels:
