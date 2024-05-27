@@ -1,0 +1,19 @@
+---
+apiVersion: apps/v1
+Kind: RelicationControler
+metadata:
+  name: tushar
+  labels:
+    app: backend
+spec:
+  template:
+    spec:
+      containers:
+      - name: tushar
+        image: httpd
+        ports:
+        - containers: 80
+  selector:
+    app: backend
+  replicas: 3
+---  
